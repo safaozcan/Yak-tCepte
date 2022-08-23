@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vehicle EditVC-->
+        <scene sceneID="lqE-Sq-lne">
+            <objects>
+                <viewController storyboardIdentifier="VehicleEditView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OWq-jG-Roo" customClass="VehicleEditVC" customModule="GassApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qWC-6J-mhP">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopView" translatesAutoresizingMaskIntoConstraints="NO" id="3WV-o0-5SO">
+                                <rect key="frame" x="0.0" y="-4" width="428" height="140"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Yakıt Türü" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vie-zr-09J">
+                                <rect key="frame" x="16" y="395" width="168" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLt-Qj-1ot">
+                                <rect key="frame" x="20" y="439" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Lt8-NF-Kur"/>
+                                    <constraint firstAttribute="width" constant="150" id="tod-bF-IIF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Benzin">
+                                    <color key="baseForegroundColor" systemColor="tintColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="benzinButtonTapped:" destination="OWq-jG-Roo" eventType="touchUpInside" id="vc7-DA-fpS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ty-Wm-jqB">
+                                <rect key="frame" x="20" y="549" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0wS-Al-52M"/>
+                                    <constraint firstAttribute="width" constant="150" id="Lma-pv-oRh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="LPG"/>
+                                <connections>
+                                    <action selector="lpgButtonTapped:" destination="OWq-jG-Roo" eventType="touchUpInside" id="3S2-P6-jH9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v3-2r-2Ms">
+                                <rect key="frame" x="20" y="494" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XuD-QG-Fs2"/>
+                                    <constraint firstAttribute="width" constant="150" id="wkc-YU-85R"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Dizel"/>
+                                <connections>
+                                    <action selector="dizelButtonTapped:" destination="OWq-jG-Roo" eventType="touchUpInside" id="WSJ-Aa-jiO"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Aracınızın ismini giriniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3f-oF-Q5r">
+                                <rect key="frame" x="126.66666666666669" y="301" width="175" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="3tB-2u-gzN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="VehicleInCircle" translatesAutoresizingMaskIntoConstraints="NO" id="t0Y-uJ-mXO">
+                                <rect key="frame" x="28.666666666666657" y="148" width="371" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="7CS-Sd-s7b"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="BackIcon" id="j5f-k1-G4B">
+                                <rect key="frame" x="-17" y="41" width="137" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lyN-EX-51d" appends="YES" id="s4A-yr-4UH"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xz-Zr-PQE">
+                                <rect key="frame" x="284" y="599" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="B89-me-YtI"/>
+                                    <constraint firstAttribute="height" constant="50" id="HrD-zX-gU5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kaydet"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="OWq-jG-Roo" eventType="touchUpInside" id="jYp-hy-94c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OPP-ug-bei"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HLt-Qj-1ot" firstAttribute="leading" secondItem="Vie-zr-09J" secondAttribute="leading" id="1GZ-2h-8Zf"/>
+                            <constraint firstItem="OPP-ug-bei" firstAttribute="trailing" secondItem="4Xz-Zr-PQE" secondAttribute="trailing" constant="44" id="1Lb-q7-rBK"/>
+                            <constraint firstItem="4Ty-Wm-jqB" firstAttribute="leading" secondItem="5v3-2r-2Ms" secondAttribute="leading" id="4LQ-h2-Q4Z"/>
+                            <constraint firstItem="Vie-zr-09J" firstAttribute="leading" secondItem="OPP-ug-bei" secondAttribute="leading" constant="20" id="5S6-il-UJn"/>
+                            <constraint firstItem="5v3-2r-2Ms" firstAttribute="leading" secondItem="HLt-Qj-1ot" secondAttribute="leading" id="5XW-D4-xuF"/>
+                            <constraint firstItem="3WV-o0-5SO" firstAttribute="leading" secondItem="OPP-ug-bei" secondAttribute="leading" id="MyW-EB-1Fo"/>
+                            <constraint firstItem="5v3-2r-2Ms" firstAttribute="top" secondItem="HLt-Qj-1ot" secondAttribute="bottom" constant="5" id="Pne-ni-OQP"/>
+                            <constraint firstItem="t0Y-uJ-mXO" firstAttribute="top" secondItem="3WV-o0-5SO" secondAttribute="bottom" constant="12" id="RQa-HC-LdY"/>
+                            <constraint firstItem="HLt-Qj-1ot" firstAttribute="top" secondItem="Vie-zr-09J" secondAttribute="bottom" constant="5" id="Uts-X5-ee1"/>
+                            <constraint firstItem="f3f-oF-Q5r" firstAttribute="bottom" secondItem="Vie-zr-09J" secondAttribute="top" constant="-60" id="Xua-JP-hPs"/>
+                            <constraint firstItem="t0Y-uJ-mXO" firstAttribute="centerX" secondItem="3WV-o0-5SO" secondAttribute="centerX" id="cN6-pc-dqq"/>
+                            <constraint firstItem="4Xz-Zr-PQE" firstAttribute="top" secondItem="4Ty-Wm-jqB" secondAttribute="bottom" id="grj-Xy-Z3g"/>
+                            <constraint firstItem="j5f-k1-G4B" firstAttribute="bottom" secondItem="3WV-o0-5SO" secondAttribute="bottom" constant="-20" id="hXS-Nu-FO1"/>
+                            <constraint firstItem="4Ty-Wm-jqB" firstAttribute="top" secondItem="5v3-2r-2Ms" secondAttribute="bottom" constant="5" id="kFF-FB-fMK"/>
+                            <constraint firstItem="3WV-o0-5SO" firstAttribute="trailing" secondItem="OPP-ug-bei" secondAttribute="trailing" id="qZa-JY-PkC"/>
+                            <constraint firstItem="3WV-o0-5SO" firstAttribute="leading" secondItem="j5f-k1-G4B" secondAttribute="trailing" constant="-100" id="rnb-fX-XId"/>
+                            <constraint firstItem="OPP-ug-bei" firstAttribute="top" secondItem="3WV-o0-5SO" secondAttribute="top" constant="48" id="t6g-ev-Ls0"/>
+                            <constraint firstItem="f3f-oF-Q5r" firstAttribute="centerX" secondItem="t0Y-uJ-mXO" secondAttribute="centerX" id="xda-Zp-3pY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="benzinButton" destination="HLt-Qj-1ot" id="FUG-tc-Ehu"/>
+                        <outlet property="dizelButton" destination="5v3-2r-2Ms" id="Xer-nL-aVo"/>
+                        <outlet property="lpgButton" destination="4Ty-Wm-jqB" id="H9T-bs-Ic9"/>
+                        <outlet property="vehicleTagTextField" destination="f3f-oF-Q5r" id="JwI-12-Gdz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aq7-B5-gE3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="lyN-EX-51d">
+                    <connections>
+                        <action selector="backIconTapped:" destination="OWq-jG-Roo" id="Vpm-am-TLe"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="81.026785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackIcon" width="194.66667175292969" height="194.66667175292969"/>
+        <image name="TopView" width="1736.6666259765625" height="440.33334350585938"/>
+        <image name="VehicleInCircle" width="370.66665649414062" height="370.66665649414062"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

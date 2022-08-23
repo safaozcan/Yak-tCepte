@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleAspectFit" restorationIdentifier="VehicleCollectionViewCell" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="VehicleCollectionViewCellVC" customModule="GassApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yl-4J-ZmH">
+                    <rect key="frame" x="272" y="41" width="26" height="22"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="vehicleeditTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="Zjo-LR-Zp0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="WDt-Cg-yjn">
+                    <rect key="frame" x="300" y="41" width="26" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="vehicleDeleteTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="G9b-EQ-7Vg"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VehicleViewCell" translatesAutoresizingMaskIntoConstraints="NO" id="rQn-8s-prH">
+                    <rect key="frame" x="5" y="5" width="350" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="huy-OO-5ah"/>
+                        <constraint firstAttribute="height" constant="150" id="mD1-TQ-XBY"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ez6-Ps-Je2">
+                    <rect key="frame" x="126" y="20" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yakıt Tipi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOe-4w-gzd">
+                    <rect key="frame" x="115" y="78" width="131" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Araç İsmi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HO-gt-Ji9">
+                    <rect key="frame" x="115" y="55" width="131" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tOe-4w-gzd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="78" id="0em-mf-kOz"/>
+                <constraint firstItem="Ez6-Ps-Je2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" symbolic="YES" id="7CA-5t-3rx"/>
+                <constraint firstItem="rQn-8s-prH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="93F-cI-4F8"/>
+                <constraint firstAttribute="trailing" secondItem="6HO-gt-Ji9" secondAttribute="trailing" constant="114" id="A5b-VW-f52"/>
+                <constraint firstItem="6HO-gt-Ji9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="55" id="DjA-k0-v8U"/>
+                <constraint firstAttribute="trailing" secondItem="4Yl-4J-ZmH" secondAttribute="trailing" constant="62" id="EIr-6Z-xFc"/>
+                <constraint firstItem="tOe-4w-gzd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="115" id="Fun-1t-PZf"/>
+                <constraint firstAttribute="trailing" secondItem="tOe-4w-gzd" secondAttribute="trailing" constant="114" id="I9y-0u-iFQ"/>
+                <constraint firstItem="rQn-8s-prH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Ibk-Vm-mgQ"/>
+                <constraint firstAttribute="trailing" secondItem="rQn-8s-prH" secondAttribute="trailing" constant="5" id="W0v-tx-Qaq"/>
+                <constraint firstItem="Ez6-Ps-Je2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="126" id="Wfo-mG-TPv"/>
+                <constraint firstItem="WDt-Cg-yjn" firstAttribute="leading" secondItem="4Yl-4J-ZmH" secondAttribute="trailing" constant="2" id="XrW-pR-5tv"/>
+                <constraint firstAttribute="bottom" secondItem="rQn-8s-prH" secondAttribute="bottom" constant="5" id="YYJ-Cl-EOV"/>
+                <constraint firstItem="6HO-gt-Ji9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="115" id="bYF-yk-U8N"/>
+                <constraint firstItem="4Yl-4J-ZmH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="272" id="eNl-VV-gbe"/>
+                <constraint firstAttribute="trailing" secondItem="Ez6-Ps-Je2" secondAttribute="trailing" constant="234" id="kue-aa-ylj"/>
+                <constraint firstAttribute="bottom" secondItem="Ez6-Ps-Je2" secondAttribute="bottom" constant="140" id="nsS-yB-O5L"/>
+                <constraint firstAttribute="bottom" secondItem="4Yl-4J-ZmH" secondAttribute="bottom" constant="97" id="pDF-cS-O91"/>
+                <constraint firstAttribute="bottom" secondItem="6HO-gt-Ji9" secondAttribute="bottom" constant="81" id="t8n-WR-itV"/>
+                <constraint firstItem="WDt-Cg-yjn" firstAttribute="centerY" secondItem="4Yl-4J-ZmH" secondAttribute="centerY" id="tL4-nB-0nn"/>
+                <constraint firstItem="4Yl-4J-ZmH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="41" id="z8i-Da-Jye"/>
+                <constraint firstAttribute="bottom" secondItem="tOe-4w-gzd" secondAttribute="bottom" constant="58" id="zs8-Vj-PGV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="gassTypeLabel" destination="tOe-4w-gzd" id="yEl-El-jBa"/>
+                <outlet property="rowNumber" destination="Ez6-Ps-Je2" id="aiY-hL-hZF"/>
+                <outlet property="vehicleDeleteButton" destination="WDt-Cg-yjn" id="0am-K6-p75"/>
+                <outlet property="vehicleEditButton" destination="4Yl-4J-ZmH" id="sWd-BR-DkD"/>
+                <outlet property="vehicleName" destination="6HO-gt-Ji9" id="zF5-KQ-4Ya"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="VehicleViewCell" width="1496" height="368"/>
+    </resources>
+</document>

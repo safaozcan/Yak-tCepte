@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vehicle AddVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="VehicleAddView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="VehicleAddVC" customModule="GassApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopView" translatesAutoresizingMaskIntoConstraints="NO" id="NDK-FH-EA1">
+                                <rect key="frame" x="0.0" y="-4" width="428" height="140"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Yakıt Türü" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lqw-Sb-dOY">
+                                <rect key="frame" x="16" y="395" width="168" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZQ-1u-MtR">
+                                <rect key="frame" x="20" y="439" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UD9-H7-pSo"/>
+                                    <constraint firstAttribute="width" constant="150" id="eR8-pq-MzN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Benzin">
+                                    <color key="baseForegroundColor" systemColor="tintColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="benzinButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Lqq-E1-TJj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LM9-At-EKQ">
+                                <rect key="frame" x="20" y="549" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OFu-Bf-EK1"/>
+                                    <constraint firstAttribute="width" constant="150" id="gFD-BE-ZbA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="LPG"/>
+                                <connections>
+                                    <action selector="lpgButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6lG-Hv-D7Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRk-UT-VCN">
+                                <rect key="frame" x="20" y="494" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9EQ-Sr-Czw"/>
+                                    <constraint firstAttribute="width" constant="150" id="nvn-7a-1IQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Dizel"/>
+                                <connections>
+                                    <action selector="dizelButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Hkn-5m-k14"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Aracınızın ismini giriniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ktK-2X-K5H">
+                                <rect key="frame" x="126.66666666666669" y="301" width="175" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="XOc-nG-GiF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="VehicleInCircle" translatesAutoresizingMaskIntoConstraints="NO" id="Y2H-cb-2ZH">
+                                <rect key="frame" x="28.666666666666657" y="148" width="371" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="lKf-DF-ikt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="BackIcon" id="ID9-Hm-Rgk">
+                                <rect key="frame" x="-17" y="41" width="137" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DQv-SI-ZWo" appends="YES" id="Yn9-4A-492"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTc-Mr-znj">
+                                <rect key="frame" x="284" y="599" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0CQ-lH-01V"/>
+                                    <constraint firstAttribute="width" constant="100" id="gVT-iw-Vh1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kaydet"/>
+                                <connections>
+                                    <action selector="savaButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Z4c-QS-Que"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y2H-cb-2ZH" firstAttribute="centerX" secondItem="NDK-FH-EA1" secondAttribute="centerX" id="2fp-U8-xO3"/>
+                            <constraint firstItem="Y2H-cb-2ZH" firstAttribute="top" secondItem="NDK-FH-EA1" secondAttribute="bottom" constant="12" id="36X-25-Z2H"/>
+                            <constraint firstItem="sTc-Mr-znj" firstAttribute="top" secondItem="LM9-At-EKQ" secondAttribute="bottom" id="3Et-c7-N7V"/>
+                            <constraint firstItem="NDK-FH-EA1" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="4LE-0l-vJB"/>
+                            <constraint firstItem="ktK-2X-K5H" firstAttribute="bottom" secondItem="Lqw-Sb-dOY" secondAttribute="top" constant="-60" id="LRN-8q-aYk"/>
+                            <constraint firstItem="Lqw-Sb-dOY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="MrY-Mo-YDo"/>
+                            <constraint firstItem="yZQ-1u-MtR" firstAttribute="top" secondItem="Lqw-Sb-dOY" secondAttribute="bottom" constant="5" id="OZJ-bz-dWA"/>
+                            <constraint firstItem="KRk-UT-VCN" firstAttribute="top" secondItem="yZQ-1u-MtR" secondAttribute="bottom" constant="5" id="QdL-8t-w46"/>
+                            <constraint firstItem="NDK-FH-EA1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Rxe-3v-vbU"/>
+                            <constraint firstItem="LM9-At-EKQ" firstAttribute="top" secondItem="KRk-UT-VCN" secondAttribute="bottom" constant="5" id="VdZ-80-4bf"/>
+                            <constraint firstItem="yZQ-1u-MtR" firstAttribute="leading" secondItem="Lqw-Sb-dOY" secondAttribute="leading" id="ZEy-zb-aTY"/>
+                            <constraint firstItem="ID9-Hm-Rgk" firstAttribute="bottom" secondItem="NDK-FH-EA1" secondAttribute="bottom" constant="-20" id="bxV-O0-9el"/>
+                            <constraint firstItem="ktK-2X-K5H" firstAttribute="centerX" secondItem="Y2H-cb-2ZH" secondAttribute="centerX" id="bz8-P6-JJx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="NDK-FH-EA1" secondAttribute="top" constant="48" id="fuU-sc-QkP"/>
+                            <constraint firstItem="LM9-At-EKQ" firstAttribute="leading" secondItem="KRk-UT-VCN" secondAttribute="leading" id="o7O-Wa-caz"/>
+                            <constraint firstItem="NDK-FH-EA1" firstAttribute="leading" secondItem="ID9-Hm-Rgk" secondAttribute="trailing" constant="-100" id="pPd-9y-fcr"/>
+                            <constraint firstItem="KRk-UT-VCN" firstAttribute="leading" secondItem="yZQ-1u-MtR" secondAttribute="leading" id="sGl-dR-M9W"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sTc-Mr-znj" secondAttribute="trailing" constant="44" id="u5I-S7-hxL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="benzinButton" destination="yZQ-1u-MtR" id="8bo-AI-WKx"/>
+                        <outlet property="dizelButton" destination="KRk-UT-VCN" id="Qbf-0e-jSW"/>
+                        <outlet property="fuelType" destination="Lqw-Sb-dOY" id="OnM-0d-qa9"/>
+                        <outlet property="lpgButton" destination="LM9-At-EKQ" id="Lnv-HG-1QR"/>
+                        <outlet property="saveButton" destination="sTc-Mr-znj" id="cMW-Qo-9nV"/>
+                        <outlet property="vehicleTagTextField" destination="ktK-2X-K5H" id="qjn-ri-tl7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="DQv-SI-ZWo">
+                    <connections>
+                        <action selector="backIconTapped:" destination="Y6W-OH-hqX" id="WxI-Vp-DZN"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="81.026785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackIcon" width="194.66667175292969" height="194.66667175292969"/>
+        <image name="TopView" width="1736.6666259765625" height="440.33334350585938"/>
+        <image name="VehicleInCircle" width="370.66665649414062" height="370.66665649414062"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

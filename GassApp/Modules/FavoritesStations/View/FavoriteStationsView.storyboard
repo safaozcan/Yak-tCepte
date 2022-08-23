@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorite StationsVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FavoriteStationsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="FavoriteStationsVC" customModule="GassApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopView" translatesAutoresizingMaskIntoConstraints="NO" id="6SQ-vm-HEr">
+                                <rect key="frame" x="0.0" y="-4" width="414" height="140"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PAb-f8-XKw">
+                                <rect key="frame" x="0.0" y="156" width="414" height="631"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fgX-SH-0xw">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="bBq-h2-SvN"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="t3z-Us-TNj"/>
+                                </connections>
+                            </collectionView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackIcon" id="MJF-ND-sZ1">
+                                <rect key="frame" x="-17" y="41" width="137" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sHK-Un-1cY" appends="YES" id="g1q-YH-3fe"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6SQ-vm-HEr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="00o-Uq-htI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6SQ-vm-HEr" secondAttribute="trailing" id="48b-Nn-8F4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="6SQ-vm-HEr" secondAttribute="top" constant="48" id="7pn-Km-5MS"/>
+                            <constraint firstItem="PAb-f8-XKw" firstAttribute="top" secondItem="6SQ-vm-HEr" secondAttribute="bottom" constant="20" id="F06-cn-FjO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PAb-f8-XKw" secondAttribute="bottom" constant="75" id="Hhy-gl-VDQ"/>
+                            <constraint firstItem="MJF-ND-sZ1" firstAttribute="bottom" secondItem="6SQ-vm-HEr" secondAttribute="bottom" constant="-20" id="SrJ-S3-8LO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PAb-f8-XKw" secondAttribute="trailing" id="V6J-iO-GGq"/>
+                            <constraint firstItem="PAb-f8-XKw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hcw-xD-3DH"/>
+                            <constraint firstItem="MJF-ND-sZ1" firstAttribute="trailing" secondItem="6SQ-vm-HEr" secondAttribute="leading" constant="120" id="m3y-GI-55v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backIconTapGesture" destination="sHK-Un-1cY" id="4O8-rF-qWY"/>
+                        <outlet property="favoriteStationsCollectionView" destination="PAb-f8-XKw" id="Ijv-1i-WbZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="sHK-Un-1cY">
+                    <connections>
+                        <action selector="backIconTapped:" destination="Y6W-OH-hqX" id="ZDl-3D-3rR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="GLV-mT-elr">
+                    <connections>
+                        <action selector="plusTapped:" destination="Y6W-OH-hqX" id="tof-ch-6y9"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-276.81159420289856" y="58.928571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackIcon" width="194.5" height="194.5"/>
+        <image name="TopView" width="1736.5" height="440"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

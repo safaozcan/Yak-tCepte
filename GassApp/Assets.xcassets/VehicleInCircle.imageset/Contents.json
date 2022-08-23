@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "araç ikonu çemberli artısız.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "araç ikonu çemberli artısız@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "araç ikonu çemberli artısız@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

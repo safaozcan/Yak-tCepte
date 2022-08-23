@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign UpVC-->
+        <scene sceneID="Jzr-yy-6pu">
+            <objects>
+                <viewController storyboardIdentifier="SignUpView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UWo-df-Mcp" customClass="SignUpVC" customModule="GassApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jLu-h4-HfO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merhaba!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ip8-QE-wCB">
+                                <rect key="frame" x="147" y="298.33333333333331" width="83" height="20.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesap Oluştur" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDZ-qq-pnr">
+                                <rect key="frame" x="85" y="347" width="109" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDY-mb-6gz">
+                                <rect key="frame" x="85" y="446.33333333333331" width="205" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="email:" destination="UWo-df-Mcp" eventType="editingDidEnd" id="mWz-hA-QYC"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wby-mL-A3I">
+                                <rect key="frame" x="85" y="509.33333333333326" width="205" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <connections>
+                                    <action selector="password:" destination="UWo-df-Mcp" eventType="editingDidEnd" id="nt7-Df-4To"/>
+                                </connections>
+                            </textField>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackIcon" translatesAutoresizingMaskIntoConstraints="NO" id="r4f-L3-WEt">
+                                <rect key="frame" x="16" y="44" width="45" height="60"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hEJ-K7-5jM"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7aJ-VF-38t" appends="YES" id="PXo-IM-ojI"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre Tekrar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jY8-ER-MqC">
+                                <rect key="frame" x="85" y="568.33333333333337" width="205" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <connections>
+                                    <action selector="passwordAgain:" destination="UWo-df-Mcp" eventType="editingDidEnd" id="ujO-UI-ytA"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vft-f1-up9">
+                                <rect key="frame" x="224.00000000000003" y="665.33333333333337" width="67.333333333333343" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Üye Ol"/>
+                                <connections>
+                                    <action selector="signUp:" destination="UWo-df-Mcp" eventType="touchUpInside" id="SmR-Y0-c7o"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WPP-Ex-toy">
+                                <rect key="frame" x="85" y="387.33333333333331" width="93.666666666666686" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="email:" destination="UWo-df-Mcp" eventType="editingDidEnd" id="sed-Ey-uRH"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ma-lC-Xtf">
+                                <rect key="frame" x="198.66666666666666" y="387.33333333333331" width="91.333333333333343" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="email:" destination="UWo-df-Mcp" eventType="editingDidEnd" id="hZu-La-G7m"/>
+                                </connections>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Jom-ge-R1a">
+                                <rect key="frame" x="0.0" y="112" width="375" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="lUL-6K-pH9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yOO-WQ-vkf"/>
+                        <color key="backgroundColor" red="0.52941179279999995" green="0.72941178080000002" blue="0.78039217000000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="yOO-WQ-vkf" firstAttribute="trailing" secondItem="kDY-mb-6gz" secondAttribute="trailing" constant="85" id="0HP-bl-8g0"/>
+                            <constraint firstItem="Ip8-QE-wCB" firstAttribute="centerX" secondItem="yOO-WQ-vkf" secondAttribute="centerX" constant="1" id="11w-FO-jnd"/>
+                            <constraint firstItem="jY8-ER-MqC" firstAttribute="trailing" secondItem="wby-mL-A3I" secondAttribute="trailing" id="1i2-Mv-J5K"/>
+                            <constraint firstItem="Jom-ge-R1a" firstAttribute="leading" secondItem="yOO-WQ-vkf" secondAttribute="leading" id="4hr-qc-P7u"/>
+                            <constraint firstItem="iDZ-qq-pnr" firstAttribute="leading" secondItem="yOO-WQ-vkf" secondAttribute="leading" constant="85" id="5Sm-18-jVr"/>
+                            <constraint firstItem="yOO-WQ-vkf" firstAttribute="trailing" secondItem="r4f-L3-WEt" secondAttribute="trailing" constant="314" id="9JL-jy-8q1"/>
+                            <constraint firstItem="jY8-ER-MqC" firstAttribute="top" secondItem="wby-mL-A3I" secondAttribute="bottom" constant="25" id="C9m-eV-2bL"/>
+                            <constraint firstItem="WPP-Ex-toy" firstAttribute="leading" secondItem="iDZ-qq-pnr" secondAttribute="leading" id="CKP-s6-p1i"/>
+                            <constraint firstItem="kDY-mb-6gz" firstAttribute="leading" secondItem="iDZ-qq-pnr" secondAttribute="leading" id="ClH-az-ucl"/>
+                            <constraint firstItem="iDZ-qq-pnr" firstAttribute="top" secondItem="Ip8-QE-wCB" secondAttribute="bottom" constant="28" id="DEh-6l-ypK"/>
+                            <constraint firstItem="wby-mL-A3I" firstAttribute="leading" secondItem="kDY-mb-6gz" secondAttribute="leading" id="DXc-1c-TZy"/>
+                            <constraint firstItem="1Ma-lC-Xtf" firstAttribute="leading" secondItem="Ip8-QE-wCB" secondAttribute="centerX" constant="10" id="GQh-zl-JyO"/>
+                            <constraint firstItem="Jom-ge-R1a" firstAttribute="centerX" secondItem="yOO-WQ-vkf" secondAttribute="centerX" id="H7n-9h-PH1"/>
+                            <constraint firstItem="1Ma-lC-Xtf" firstAttribute="trailing" secondItem="kDY-mb-6gz" secondAttribute="trailing" id="ID9-an-ECl"/>
+                            <constraint firstItem="Vft-f1-up9" firstAttribute="top" secondItem="wby-mL-A3I" secondAttribute="bottom" constant="122" id="KTK-wS-9Bd"/>
+                            <constraint firstItem="r4f-L3-WEt" firstAttribute="leading" secondItem="jLu-h4-HfO" secondAttribute="leadingMargin" id="MZj-an-goC"/>
+                            <constraint firstItem="Jom-ge-R1a" firstAttribute="top" secondItem="r4f-L3-WEt" secondAttribute="top" constant="68" id="Nuv-z7-NYI"/>
+                            <constraint firstItem="Jom-ge-R1a" firstAttribute="bottom" secondItem="iDZ-qq-pnr" secondAttribute="top" constant="-100" id="P0Y-wK-Wfs"/>
+                            <constraint firstItem="WPP-Ex-toy" firstAttribute="trailing" secondItem="Ip8-QE-wCB" secondAttribute="centerX" constant="-10" id="Thf-kg-q7g"/>
+                            <constraint firstItem="Ip8-QE-wCB" firstAttribute="top" secondItem="yOO-WQ-vkf" secondAttribute="top" priority="250" constant="277" id="cr2-fa-iFb"/>
+                            <constraint firstItem="wby-mL-A3I" firstAttribute="top" secondItem="kDY-mb-6gz" secondAttribute="bottom" constant="29" id="dIa-lK-i2c"/>
+                            <constraint firstItem="yOO-WQ-vkf" firstAttribute="trailing" secondItem="Jom-ge-R1a" secondAttribute="trailing" id="dhd-XR-tRS"/>
+                            <constraint firstItem="wby-mL-A3I" firstAttribute="trailing" secondItem="kDY-mb-6gz" secondAttribute="trailing" id="h07-h6-XYw"/>
+                            <constraint firstItem="Vft-f1-up9" firstAttribute="trailing" secondItem="wby-mL-A3I" secondAttribute="trailing" constant="1.3333333333333144" id="hy2-FC-TUo"/>
+                            <constraint firstItem="r4f-L3-WEt" firstAttribute="top" secondItem="yOO-WQ-vkf" secondAttribute="top" id="jb5-wM-GTX"/>
+                            <constraint firstItem="yOO-WQ-vkf" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Ip8-QE-wCB" secondAttribute="trailing" constant="146" id="jxM-oe-rwJ"/>
+                            <constraint firstItem="jY8-ER-MqC" firstAttribute="leading" secondItem="wby-mL-A3I" secondAttribute="leading" id="lAX-lo-pTC"/>
+                            <constraint firstItem="WPP-Ex-toy" firstAttribute="bottom" secondItem="kDY-mb-6gz" secondAttribute="top" constant="-25" id="odD-fN-Zsp"/>
+                            <constraint firstItem="Ip8-QE-wCB" firstAttribute="leading" secondItem="yOO-WQ-vkf" secondAttribute="leading" constant="147" id="tuZ-IE-Udu"/>
+                            <constraint firstItem="1Ma-lC-Xtf" firstAttribute="bottom" secondItem="kDY-mb-6gz" secondAttribute="top" constant="-25" id="xXJ-tq-CXP"/>
+                            <constraint firstItem="kDY-mb-6gz" firstAttribute="top" secondItem="iDZ-qq-pnr" secondAttribute="bottom" constant="79" id="zWB-3P-LrS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="kDY-mb-6gz" id="r1Q-G0-9Qi"/>
+                        <outlet property="nameTeztField" destination="WPP-Ex-toy" id="Q4e-iu-e7c"/>
+                        <outlet property="pageTitle" destination="Ip8-QE-wCB" id="i0J-CL-Puc"/>
+                        <outlet property="passwordAgainTextField" destination="jY8-ER-MqC" id="vP8-rw-j3e"/>
+                        <outlet property="passwordTextField" destination="wby-mL-A3I" id="669-WT-icc"/>
+                        <outlet property="signUpButton" destination="Vft-f1-up9" id="MHE-Xs-mnT"/>
+                        <outlet property="smallTitle" destination="iDZ-qq-pnr" id="d2B-Nv-CcX"/>
+                        <outlet property="surnameTextField" destination="1Ma-lC-Xtf" id="CzV-iZ-uWJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGp-TD-dvv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7aJ-VF-38t">
+                    <connections>
+                        <action selector="backToLogInPageClicked:" destination="UWo-df-Mcp" id="RaC-Tq-xFP"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1.4492753623188408" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackIcon" width="194.66667175292969" height="194.66667175292969"/>
+        <image name="LaunchScreen" width="3392.333251953125" height="1901.3333740234375"/>
+    </resources>
+</document>

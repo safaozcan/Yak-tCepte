@@ -1,0 +1,5 @@
+Target dependency graph (3 targets)
+Pods-GassApp in Pods, no dependencies
+Pods-GassApp-GassAppUITests in Pods, no dependencies
+Pods-GassAppTests in Pods, depends on:
+Pods-GassApp in Pods (explicit)

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AddressVC-->
+        <scene sceneID="dIx-7x-Qg5">
+            <objects>
+                <viewController storyboardIdentifier="AddressShowView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jn0-0o-Ilf" customClass="AddressVC" customModule="GassApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yQx-Q9-HFw">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopView" translatesAutoresizingMaskIntoConstraints="NO" id="QEk-Bd-rHj">
+                                <rect key="frame" x="0.0" y="-4" width="428" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9bR-B7-o7p">
+                                <rect key="frame" x="0.0" y="194" width="428" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BsF-EG-huS">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jn0-0o-Ilf" id="gCH-4T-z89"/>
+                                    <outlet property="delegate" destination="jn0-0o-Ilf" id="I7Z-qb-R6z"/>
+                                </connections>
+                            </collectionView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plus" translatesAutoresizingMaskIntoConstraints="NO" id="CjI-5G-Rv3">
+                                <rect key="frame" x="20" y="818" width="85" height="74"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="TAf-S5-dnh"/>
+                                    <constraint firstAttribute="width" constant="85" id="pq0-Mb-OgL"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9Yf-dn-UQb" appends="YES" id="aYE-IW-mXl"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackIcon" id="ceI-FB-brg">
+                                <rect key="frame" x="-17" y="41" width="137" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="w1U-QI-aaX" appends="YES" id="ktT-b1-9Ct"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MyG-fI-zic"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QEk-Bd-rHj" firstAttribute="leading" secondItem="ceI-FB-brg" secondAttribute="trailing" constant="-120" id="3XH-Kk-cas"/>
+                            <constraint firstItem="9bR-B7-o7p" firstAttribute="top" secondItem="MyG-fI-zic" secondAttribute="top" constant="150" id="MJg-6G-e0C"/>
+                            <constraint firstItem="MyG-fI-zic" firstAttribute="trailing" secondItem="QEk-Bd-rHj" secondAttribute="trailing" id="Qvl-WG-1Cy"/>
+                            <constraint firstItem="QEk-Bd-rHj" firstAttribute="centerX" secondItem="9bR-B7-o7p" secondAttribute="centerX" id="RF8-ke-WYG"/>
+                            <constraint firstItem="9bR-B7-o7p" firstAttribute="top" secondItem="QEk-Bd-rHj" secondAttribute="bottom" constant="58" id="fPC-nO-YqW"/>
+                            <constraint firstItem="MyG-fI-zic" firstAttribute="top" secondItem="QEk-Bd-rHj" secondAttribute="top" constant="48" id="gWL-N5-5hG"/>
+                            <constraint firstItem="CjI-5G-Rv3" firstAttribute="leading" secondItem="MyG-fI-zic" secondAttribute="leading" constant="20" id="jPt-mZ-pAq"/>
+                            <constraint firstItem="QEk-Bd-rHj" firstAttribute="leading" secondItem="MyG-fI-zic" secondAttribute="leading" id="jVZ-Dh-myP"/>
+                            <constraint firstItem="MyG-fI-zic" firstAttribute="bottom" secondItem="CjI-5G-Rv3" secondAttribute="bottom" id="mCf-dl-iNl"/>
+                            <constraint firstItem="MyG-fI-zic" firstAttribute="trailing" secondItem="9bR-B7-o7p" secondAttribute="trailing" id="mrg-2U-qVN"/>
+                            <constraint firstItem="MyG-fI-zic" firstAttribute="bottom" secondItem="9bR-B7-o7p" secondAttribute="bottom" constant="100" id="n3P-A0-k5m"/>
+                            <constraint firstItem="QEk-Bd-rHj" firstAttribute="bottom" secondItem="ceI-FB-brg" secondAttribute="bottom" constant="20" id="uMk-bc-riL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressCollectionView" destination="9bR-B7-o7p" id="VNM-zE-LTz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zda-RO-QHK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="w1U-QI-aaX">
+                    <connections>
+                        <action selector="goBack:" destination="jn0-0o-Ilf" id="6eB-jL-UE0"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="9Yf-dn-UQb">
+                    <connections>
+                        <action selector="plusIconTapped:" destination="jn0-0o-Ilf" id="vLT-TK-TXn"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackIcon" width="194.66667175292969" height="194.66667175292969"/>
+        <image name="Plus" width="200.33332824707031" height="200.33332824707031"/>
+        <image name="TopView" width="1736.6666259765625" height="440.33334350585938"/>
+    </resources>
+</document>

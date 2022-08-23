@@ -1,0 +1,52 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98e341e411f54151560b22cc133f798ebd"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e989467256c8026d9a0f117499a33dee8cb"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e984d4d2a75c0aeda38ad440ae42637b6bf"
+    }
+  ],
+  "containerPath" : "/Users/safaozcan/Desktop/app/GassApp/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/safaozcan/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/safaozcan/Library/Developer/Xcode/DerivedData/Pods-dhpvodgdzeuvlybiohdizbzrhavk/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/safaozcan/Library/Developer/Xcode/DerivedData/Pods-dhpvodgdzeuvlybiohdizbzrhavk/Index/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}
