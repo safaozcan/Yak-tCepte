@@ -18,34 +18,11 @@ class BaseViewController<U>: UIViewController {
     
     
     
-    
-    var spinner = UIActivityIndicatorView(style: .large)
-    var loadingView = UIView()
+   
     
     //var parameter:BaseParameter?
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        loadingView.backgroundColor = UIColor(white: 0, alpha: 0.4)
-        loadingView.translatesAutoresizingMaskIntoConstraints = false
-        loadingView.isUserInteractionEnabled = true
-        
-        view.addSubview(loadingView)
-        
-        loadingView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        loadingView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        loadingView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        loadingView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-
-        spinner.translatesAutoresizingMaskIntoConstraints = false
-        spinner.startAnimating()
-        loadingView.addSubview(spinner)
-
-        spinner.centerXAnchor.constraint(equalTo: loadingView.centerXAnchor).isActive = true
-        spinner.centerYAnchor.constraint(equalTo: loadingView.centerYAnchor).isActive = true
-        
-        loadingView.isHidden = true
-    }
+   
     func
     setTextField(textField: UITextField, placeHolder: String) {
         textField.layer.cornerRadius = 18.0
@@ -116,19 +93,7 @@ class BaseViewController<U>: UIViewController {
         }
 
     }
-    
-    func startLoading(){
-        DispatchQueue.main.async {
-            self.loadingView.isHidden = false
-        }
-    }
-    
-    func stopLoading(){
-        DispatchQueue.main.async {
-            self.loadingView.isHidden = true
-        }
-    }
-    
+
 
 }
 func serverResponse<T>(result:Result<T, APIError>) -> T?{
