@@ -107,8 +107,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "addStationsToMapView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -123,8 +123,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -395,8 +395,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "454"
-            endingLineNumber = "454"
+            startingLineNumber = "400"
+            endingLineNumber = "400"
             landmarkName = "viewController(_:didAutocompleteWith:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -411,8 +411,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "addStationsToMapView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -427,8 +427,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "addStationsToMapView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -443,8 +443,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "addStationsToMapView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -459,8 +459,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "addStationsToMapView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -491,8 +491,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "438"
-            endingLineNumber = "438"
+            startingLineNumber = "384"
+            endingLineNumber = "384"
             landmarkName = "toFilter(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -507,8 +507,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "439"
-            endingLineNumber = "439"
+            startingLineNumber = "385"
+            endingLineNumber = "385"
             landmarkName = "toFilter(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -523,8 +523,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "beginLocationUpdates(locationManager:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -539,8 +539,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "beginLocationUpdates(locationManager:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -555,8 +555,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "beginLocationUpdates(locationManager:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -571,8 +571,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "beginLocationUpdates(locationManager:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -587,25 +587,9 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "beginLocationUpdates(locationManager:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EE6D90D3-D2E1-4DC5-A0C1-FBE13C178679"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GassApp/Modules/Homepage/ViewController/FilterVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
-            landmarkName = "uygulaButtonTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -619,10 +603,10 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "357"
-            endingLineNumber = "357"
-            landmarkName = "toMoreOptions(_:)"
-            landmarkType = "7">
+            startingLineNumber = "303"
+            endingLineNumber = "303"
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -651,8 +635,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "addStationsToMapView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -683,8 +667,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "mapView(_:didSelect:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -715,8 +699,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "mapView(_:didSelect:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -731,10 +715,10 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "addStationsToMapView()"
-            landmarkType = "7">
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -747,10 +731,10 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "246"
-            endingLineNumber = "246"
-            landmarkName = "mapView(_:viewFor:)"
-            landmarkType = "7">
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -763,8 +747,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "addStationsToMapView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -779,73 +763,9 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "addStationsToMapView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E24BFFBF-4A61-4478-9735-14773646951D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GassApp/Modules/Homepage/ViewController/FilterVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
-            landmarkName = "uygulaButtonTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "80031337-DDD8-4BD6-8535-BAEDBBABC94D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GassApp/Modules/Homepage/ViewController/FilterVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
-            landmarkName = "uygulaButtonTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "168AB58C-FF40-42A6-9EA3-8625C01220AF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GassApp/Modules/Homepage/ViewController/FilterVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
-            landmarkName = "uygulaButtonTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A9213CAD-AD07-42DE-B49A-5A00AFF6374E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GassApp/Modules/Homepage/ViewController/FilterVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "uygulaButtonTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -967,8 +887,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/FilterVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "uygulaButtonTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -983,8 +903,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/FilterVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "uygulaButtonTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -999,8 +919,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "setFilter(isDizel:isLPG:isBenzin:isDizelKatk&#x131;l&#x131;:isbenzinKatk&#x131;l&#x131;:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1015,8 +935,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "addStationsToMapView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1031,8 +951,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/FilterVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "uygulaButtonTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1047,8 +967,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "addStationsToMapView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1063,8 +983,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "locationButtonTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1079,8 +999,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "342"
-            endingLineNumber = "342"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
             landmarkName = "mapView(_:viewFor:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1095,8 +1015,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "210"
-            endingLineNumber = "210"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "mapView(_:didSelect:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1111,8 +1031,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "addStationsToMapView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1127,8 +1047,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "216"
-            endingLineNumber = "216"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "mapView(_:didSelect:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1143,8 +1063,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "217"
-            endingLineNumber = "217"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
             landmarkName = "mapView(_:didSelect:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1159,8 +1079,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "344"
-            endingLineNumber = "344"
+            startingLineNumber = "295"
+            endingLineNumber = "295"
             landmarkName = "mapView(_:viewFor:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1175,8 +1095,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "325"
-            endingLineNumber = "325"
+            startingLineNumber = "279"
+            endingLineNumber = "279"
             landmarkName = "mapView(_:viewFor:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1191,8 +1111,8 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "345"
-            endingLineNumber = "345"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
             landmarkName = "mapView(_:viewFor:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1207,25 +1127,9 @@
             filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "346"
-            endingLineNumber = "346"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
             landmarkName = "mapView(_:viewFor:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AFA6B886-FC72-484A-AB16-1CEDA3C676EC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GassApp/Modules/Homepage/ViewController/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
-            landmarkName = "mapView(_:didSelect:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

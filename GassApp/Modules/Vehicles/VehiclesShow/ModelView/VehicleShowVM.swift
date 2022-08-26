@@ -14,7 +14,7 @@ class VehicleShowVM:ViewModel{
     var updateUIAfterDelete: (() -> Void)?
     
     
-    func VehicleShowResponse(result : Result<VehicleShowResponse,APIError>){
+    private func VehicleShowResponse(result : Result<VehicleShowResponse,APIError>){
         
         switch result {
             
@@ -65,7 +65,7 @@ class VehicleShowVM:ViewModel{
             break;
         }
     }
-    func VehicleDeleteResponse(result : Result<VehicleDeleteResponse,APIError>){
+    private func VehicleDeleteResponse(result : Result<VehicleDeleteResponse,APIError>){
         
         switch result {
             

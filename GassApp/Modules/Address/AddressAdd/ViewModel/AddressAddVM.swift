@@ -12,7 +12,7 @@ class AddressAddVM : ViewModel{
     var addressCreated: (() -> Void)?
     
     
-    func addressAddResponse(result : Result<AddressAddResponse,APIError>){
+    private func addressAddResponse(result : Result<AddressAddResponse,APIError>){
         
         switch result {
             

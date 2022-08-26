@@ -13,12 +13,12 @@ class VehicleEditVC: BaseViewController<VehicleEditVM>{
     var token: String?
     
     
-    @IBOutlet weak var benzinButton: UIButton!
-    @IBOutlet weak var dizelButton: UIButton!
+    @IBOutlet private weak var benzinButton: UIButton!
+    @IBOutlet private weak var dizelButton: UIButton!
     
-    @IBOutlet weak var lpgButton: UIButton!
+    @IBOutlet private weak var lpgButton: UIButton!
     
-    @IBOutlet weak var vehicleTagTextField: UITextField!
+    @IBOutlet private weak var vehicleTagTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +71,7 @@ class VehicleEditVC: BaseViewController<VehicleEditVM>{
         
     }
     
-    @IBAction func dizelButtonTapped(_ sender: Any) {
+    @IBAction private func dizelButtonTapped(_ sender: Any) {
         if dizelButton.backgroundColor == .white {
             dizelButton.backgroundColor = UIColor(red: 0.53, green: 0.73, blue: 0.78, alpha: 1.00)
             dizelButton.tintColor = .white
@@ -88,7 +88,7 @@ class VehicleEditVC: BaseViewController<VehicleEditVM>{
         
     }
     
-    @IBAction func lpgButtonTapped(_ sender: Any) {
+    @IBAction private func lpgButtonTapped(_ sender: Any) {
         if lpgButton.backgroundColor == .white {
             lpgButton.backgroundColor = UIColor(red: 0.53, green: 0.73, blue: 0.78, alpha: 1.00)
             lpgButton.tintColor = .white
@@ -106,7 +106,7 @@ class VehicleEditVC: BaseViewController<VehicleEditVM>{
     
     
     
-    @IBAction func benzinButtonTapped(_ sender: Any) {
+    @IBAction private func benzinButtonTapped(_ sender: Any) {
         if benzinButton.backgroundColor == .white {
             benzinButton.backgroundColor =  UIColor(red: 0.53, green: 0.73, blue: 0.78, alpha: 1.00)
             benzinButton.tintColor = .white
@@ -121,11 +121,11 @@ class VehicleEditVC: BaseViewController<VehicleEditVM>{
             lpgButton.isEnabled = true
         }
     }
-    @IBAction func saveButtonTapped(_ sender: Any) {
+    @IBAction private func saveButtonTapped(_ sender: Any) {
         viewModel?.editVehicles( id: viewModel?.id, tag: vehicleTagTextField.text, fuelType: viewModel?.gasType,token: self.token)
     }
     
-    @IBAction func backIconTapped(_ sender: Any) {
+    @IBAction private func backIconTapped(_ sender: Any) {
         let vm = VehicleShowVM()
         let vc = VehicleShowVC.instantiate(viewModel: vm)
         vc.modalPresentationStyle = .fullScreen

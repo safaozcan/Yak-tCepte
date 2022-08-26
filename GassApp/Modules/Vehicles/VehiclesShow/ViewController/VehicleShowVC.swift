@@ -44,7 +44,7 @@ class VehicleShowVC: BaseViewController<VehicleShowVM> {
     
     
     
-    @IBAction func goBack(_ sender: Any) {
+    @IBAction private func goBack(_ sender: Any) {
         let vm = HomePageVM()
         let vc = ViewController.instantiate(viewModel: vm)
         vc.modalPresentationStyle = .fullScreen
@@ -53,7 +53,7 @@ class VehicleShowVC: BaseViewController<VehicleShowVM> {
     }
     
     
-    @IBAction func toVehicleAdd(_ sender: Any) {
+    @IBAction private func toVehicleAdd(_ sender: Any) {
         
             
             let vm = VehicleAddVM()
@@ -65,7 +65,7 @@ class VehicleShowVC: BaseViewController<VehicleShowVM> {
     }
     
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet private weak var collectionView: UICollectionView!
     
 }
 extension VehicleShowVC: UICollectionViewDelegate,UICollectionViewDataSource{

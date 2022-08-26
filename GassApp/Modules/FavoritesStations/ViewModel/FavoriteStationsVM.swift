@@ -15,7 +15,7 @@ class FavoriteStationsVM: ViewModel {
     var updateUIAfterDelete: (() -> Void)?
     
     
-   /* func favStationsShowResponse(result : Result<VehicleShowResponse,APIError>){
+   /* private func favStationsShowResponse(result : Result<VehicleShowResponse,APIError>){
         
         switch result {
             
@@ -66,7 +66,7 @@ class FavoriteStationsVM: ViewModel {
             break;
         }
     }*/
-    func favStationsDeleteResponse(result : Result<VehicleDeleteResponse,APIError>){
+    private func favStationsDeleteResponse(result : Result<VehicleDeleteResponse,APIError>){
         
         switch result {
             

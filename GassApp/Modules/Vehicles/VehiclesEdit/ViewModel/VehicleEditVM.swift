@@ -16,7 +16,7 @@ class VehicleEditVM : ViewModel{
     var vehicleEdited: (() -> Void)?
     
     
-    func vehicleEditResponse(result : Result<VehicleEditResponse,APIError>){
+    private func vehicleEditResponse(result : Result<VehicleEditResponse,APIError>){
         
         switch result {
             

@@ -41,15 +41,15 @@ class VehicleAddVC: BaseViewController<VehicleAddVM>{
         
     }
     
-    @IBOutlet weak var vehicleTagTextField: UITextField!
+    @IBOutlet private weak var vehicleTagTextField: UITextField!
     
-    @IBOutlet weak var saveButton: UIButton!
-    @IBOutlet weak var lpgButton: UIButton!
-    @IBOutlet weak var dizelButton: UIButton!
-    @IBOutlet weak var benzinButton: UIButton!
-    @IBOutlet weak var fuelType: UILabel!
+    @IBOutlet private weak var saveButton: UIButton!
+    @IBOutlet private weak var lpgButton: UIButton!
+    @IBOutlet private weak var dizelButton: UIButton!
+    @IBOutlet private weak var benzinButton: UIButton!
+    @IBOutlet private weak var fuelType: UILabel!
     
-    @IBAction func backIconTapped(_ sender: Any) {
+    @IBAction private func backIconTapped(_ sender: Any) {
         let vm = VehicleShowVM()
         let vc = VehicleShowVC.instantiate(viewModel: vm)
         vc.modalPresentationStyle = .fullScreen
@@ -57,14 +57,14 @@ class VehicleAddVC: BaseViewController<VehicleAddVM>{
         
     }
     
-    @IBAction func savaButtonTapped(_ sender: Any) {
+    @IBAction private func savaButtonTapped(_ sender: Any) {
         viewModel?.createVehicles(token: self.token ?? "", tag: vehicleTagTextField.text, fuelType: viewModel?.gasType)
         
         
     }
   
   
-        @IBAction func benzinButtonTapped(_ sender: Any) {
+        @IBAction private func benzinButtonTapped(_ sender: Any) {
         if benzinButton.backgroundColor == .white {
             benzinButton.backgroundColor =  UIColor(red: 0.53, green: 0.73, blue: 0.78, alpha: 1.00)
             benzinButton.tintColor = .white
@@ -81,7 +81,7 @@ class VehicleAddVC: BaseViewController<VehicleAddVM>{
         
     }
     
-    @IBAction func dizelButtonTapped(_ sender: Any) {
+    @IBAction private func dizelButtonTapped(_ sender: Any) {
         if dizelButton.backgroundColor == .white {
             dizelButton.backgroundColor = UIColor(red: 0.53, green: 0.73, blue: 0.78, alpha: 1.00)
             dizelButton.tintColor = .white
@@ -97,7 +97,7 @@ class VehicleAddVC: BaseViewController<VehicleAddVM>{
         }
         
     }
-    @IBAction func lpgButtonTapped(_ sender: Any) {
+    @IBAction private func lpgButtonTapped(_ sender: Any) {
         if lpgButton.backgroundColor == .white {
             lpgButton.backgroundColor = UIColor(red: 0.53, green: 0.73, blue: 0.78, alpha: 1.00)
             lpgButton.tintColor = .white
@@ -116,7 +116,7 @@ class VehicleAddVC: BaseViewController<VehicleAddVM>{
 }
 extension VehicleAddVC{
 
-    func setButton(button: UIButton){
+    private func setButton(button: UIButton){
         button.backgroundColor = .white
         button.layer.cornerRadius = 12.0
         button.layer.borderWidth = 2.0
@@ -125,7 +125,7 @@ extension VehicleAddVC{
         button.tintColor = UIColor(red: 0.53, green: 0.73, blue: 0.78, alpha: 1.00)
         
     }
-    func isTapped(button: UIButton) {
+    private func isTapped(button: UIButton) {
         viewModel?.gasType = button.titleLabel?.text
     }
 }

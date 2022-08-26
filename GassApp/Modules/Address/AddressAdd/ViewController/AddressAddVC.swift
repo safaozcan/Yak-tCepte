@@ -12,8 +12,8 @@ class AddressAddVC: BaseViewController<AddressAddVM>{
     
     var token : String?
     var addres: CLLocationCoordinate2D?
-    @IBOutlet weak var addressTag: UITextField!
-    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet private weak var addressTag: UITextField!
+    @IBOutlet private weak var cityTextField: UITextField!
     
     
     override func viewDidLoad() {
@@ -42,7 +42,7 @@ class AddressAddVC: BaseViewController<AddressAddVM>{
         }
     }
     
-    @IBAction func backIconTapped(_ sender: Any) {
+    @IBAction private func backIconTapped(_ sender: Any) {
         let vm = AddressVM()
         let vc = AddressVC.instantiate(viewModel: vm)
         vc.modalPresentationStyle = .fullScreen
@@ -50,7 +50,7 @@ class AddressAddVC: BaseViewController<AddressAddVM>{
         
     }
     
-    @IBAction func addressSearch(_ sender: Any) {
+    @IBAction private func addressSearch(_ sender: Any) {
         let autocompleteController = GMSAutocompleteViewController()
            autocompleteController.delegate = self
 
@@ -71,7 +71,7 @@ class AddressAddVC: BaseViewController<AddressAddVM>{
 
          
     
-    @IBAction func saveButtonTapped(_ sender: Any) {
+    @IBAction private func saveButtonTapped(_ sender: Any) {
         viewModel?.createAddress(token: token,tag: addressTag.text, detail: cityTextField.text,lat: addres?.latitude,lng: addres?.longitude, willBeFav: false )
         
     }

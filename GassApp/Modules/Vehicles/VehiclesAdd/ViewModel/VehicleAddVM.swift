@@ -12,7 +12,7 @@ class VehicleAddVM:ViewModel{
     var vehicleCreated: (() -> Void)?
     
     
-    func vehicleAddResponse(result : Result<VehicleAddResponse,APIError>){
+    private func vehicleAddResponse(result : Result<VehicleAddResponse,APIError>){
         
         switch result {
             

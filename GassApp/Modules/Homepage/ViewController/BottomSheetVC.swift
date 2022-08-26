@@ -9,20 +9,20 @@ import Foundation
 import UIKit
 class BottomSheetVC: BaseViewController<HomePageVM>{
     
-    @IBOutlet weak var brandImageView: UIImageView!
-    @IBOutlet weak var benzinPriceLabel: UILabel!
-    @IBOutlet weak var katkılıBenzinPriceLabel: UILabel!
-    @IBOutlet weak var dizelPriceLabel: UILabel!
-    @IBOutlet weak var katkılıDizelLabel: UILabel!
-    @IBOutlet weak var lpgPriceLabel: UILabel!
-    @IBOutlet weak var starTapped: UIButton!
+    @IBOutlet private weak var brandImageView: UIImageView!
+    @IBOutlet private weak var benzinPriceLabel: UILabel!
+    @IBOutlet private weak var katkılıBenzinPriceLabel: UILabel!
+    @IBOutlet private weak var dizelPriceLabel: UILabel!
+    @IBOutlet private weak var katkılıDizelLabel: UILabel!
+    @IBOutlet private weak var lpgPriceLabel: UILabel!
+    @IBOutlet private weak var starTapped: UIButton!
     
     var token: String?
     var logo: String?
-    @IBAction func addFavTapped(_ sender: Any) {
+    @IBAction private func addFavTapped(_ sender: Any) {
         viewModel?.addFavStation(token: token, specificName: viewModel?.station?.specificName, brand: viewModel?.station?.brand, lat: viewModel?.station?.lat, lng: viewModel?.station?.lng, lpgPrice: viewModel?.station?.lpgPrice, gasolinePrice: viewModel?.station?.gasolinePrice, gasolineKatkiliPrice: viewModel?.station?.gasolineKatkiliPrice, dieselPrice: viewModel?.station?.dieselPrice, dieselKatkiliPrice: viewModel?.station?.dieselKatkiliPrice, lastUpdate: nil)
     }
-    func setLogo(brandLogo: String){
+    private func setLogo(brandLogo: String){
         brandImageView?.image = UIImage(named: brandLogo )
         //brandImageView?.image = brandLogo
         

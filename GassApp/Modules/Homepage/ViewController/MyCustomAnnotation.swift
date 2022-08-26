@@ -28,7 +28,7 @@ override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(coder: aDecoder)
     }
  
-    @IBOutlet weak var annotationImageView: UIImageView!
+    @IBOutlet private weak var annotationImageView: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var BrandIcon: UIImageView!
    

@@ -129,11 +129,5 @@ struct APIRequest{
         send(message, endpoint: endpoint, method: "PUT", queryItems: queryItems, path: path, completion: completion)
     }
     
-    
-    //delete
-    //put(update)
-    //
-    
-    
 }
 

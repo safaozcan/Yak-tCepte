@@ -18,6 +18,7 @@ class SignUpVC: BaseViewController<SignUpViewModel>{
         signUpButton.layer.cornerRadius = 18.0
         signUpButton.clipsToBounds = true
         hideKeyboardWhenTappedAround()
+        
         viewModel?.signUpPageDataLoaded = { [weak self] in
             DispatchQueue.main.async {
                 let alertController = UIAlertController(title: "Merhaba", message: "Üye olma işleminiz başarıyla gerçekleşti.", preferredStyle: .alert)
@@ -45,17 +46,17 @@ class SignUpVC: BaseViewController<SignUpViewModel>{
     
     
     
-    @IBOutlet weak var surnameTextField: UITextField!
-    @IBOutlet weak var nameTeztField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var passwordAgainTextField: UITextField!
-    @IBOutlet weak var pageTitle: UILabel!
-    @IBOutlet weak var smallTitle: UILabel!
+    @IBOutlet private weak var surnameTextField: UITextField!
+    @IBOutlet private weak var nameTeztField: UITextField!
+    @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var passwordAgainTextField: UITextField!
+    @IBOutlet private weak var pageTitle: UILabel!
+    @IBOutlet private weak var smallTitle: UILabel!
 
-    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet private weak var signUpButton: UIButton!
     
-    @IBAction func backToLogInPageClicked(_ sender: Any) {
+    @IBAction private func backToLogInPageClicked(_ sender: Any) {
         let vm = LogInViewModel()
         let vc = LogInVC.instantiate(viewModel: vm)
         vc.modalPresentationStyle = .fullScreen
@@ -64,18 +65,10 @@ class SignUpVC: BaseViewController<SignUpViewModel>{
     
     
     
-    
-    @IBAction func email(_ sender: Any) {
-    }
-    
-    @IBAction func password(_ sender: Any) {
-    }
-    
-    @IBAction func passwordAgain(_ sender: Any) {
-    }
+
     
     
-    @IBAction func signUp(_ sender: Any) {
+    @IBAction private func signUp(_ sender: Any) {
         
        
         if passwordTextField.text != passwordAgainTextField.text{

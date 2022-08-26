@@ -38,7 +38,7 @@ class HomePageVM: ViewModel{
     var isTotal = true
     
    
-    func NearStationResponse(result : Result<NearStationsResponse,APIError>){
+    private func NearStationResponse(result : Result<NearStationsResponse,APIError>){
         
         switch result {
             
@@ -75,7 +75,7 @@ class HomePageVM: ViewModel{
                   // All done!
 
                 //self.view.backgroundColor = UIColor.white
-                print("Araçlar geldi")
+                
                 self.updateMap?()
                 self.stationData = response.data
                 self.stations = response.data
@@ -90,7 +90,7 @@ class HomePageVM: ViewModel{
             break;
         }
     }
-    func addFavResponse(result : Result<AddFavResponse,APIError>){
+    private func addFavResponse(result : Result<AddFavResponse,APIError>){
         
         switch result {
             
@@ -127,7 +127,7 @@ class HomePageVM: ViewModel{
                   // All done!
 
                 //self.view.backgroundColor = UIColor.white
-                print("Araçlar geldi")
+              
                 //self.updateMap?()
     
             //    let defaults = UserDefaults.standard

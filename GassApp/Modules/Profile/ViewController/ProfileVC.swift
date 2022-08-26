@@ -15,7 +15,7 @@ class ProfileVC: BaseViewController<ProfileVM>{
     
     }
     
-    @IBAction func toAddress(_ sender: Any) {
+    @IBAction private func toAddress(_ sender: Any) {
         let vm = AddressVM()
         let vc = AddressVC.instantiate(viewModel: vm)
         vc.modalPresentationStyle = .fullScreen
@@ -23,7 +23,7 @@ class ProfileVC: BaseViewController<ProfileVM>{
         
     }
     
-    @IBAction func logOut(_ sender: Any) {
+    @IBAction private func logOut(_ sender: Any) {
         
         DispatchQueue.main.async {
         let alert = UIAlertController(title: "Merhaba", message: "Çıkış yapmak istediğinizden emin misiniz?", preferredStyle: UIAlertController.Style.alert)
@@ -47,14 +47,14 @@ class ProfileVC: BaseViewController<ProfileVM>{
         
     }
     
-    @IBAction func backIconTapped(_ sender: Any) {
+    @IBAction private func backIconTapped(_ sender: Any) {
         let vm = HomePageVM()
         let vc = ViewController.instantiate(viewModel: vm)
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
         
     }
-    @IBAction func toVehicleShow(_ sender: Any) {
+    @IBAction private func toVehicleShow(_ sender: Any) {
         let vm = VehicleShowVM()
         let vc = VehicleShowVC.instantiate(viewModel: vm)
         vc.modalPresentationStyle = .fullScreen
@@ -62,7 +62,7 @@ class ProfileVC: BaseViewController<ProfileVM>{
         
     }
     
-    @IBAction func toFavoriteStations(_ sender: Any) {
+    @IBAction private func toFavoriteStations(_ sender: Any) {
         let vm = FavoriteStationsVM()
         let vc = FavoriteStationsVC.instantiate(viewModel: vm)
         vc.modalPresentationStyle = .fullScreen

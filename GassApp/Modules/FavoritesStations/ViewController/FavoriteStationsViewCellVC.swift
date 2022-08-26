@@ -13,14 +13,14 @@ protocol FavoriteStationsViewCellDelegate: AnyObject {
 class FavoriteStationsViewCellVC: UICollectionViewCell{
     weak var delegate: FavoriteStationsViewCellDelegate?
     
-    @IBOutlet weak var dizelLabel: UILabel!
+    @IBOutlet private weak var dizelLabel: UILabel!
     
-    @IBOutlet weak var benzinLabel: UILabel!
-    @IBOutlet weak var lpgLabel: UILabel!
-    @IBOutlet weak var starButton: UIButton!
-    @IBOutlet weak var brandIcon: UIImageView!
+    @IBOutlet private weak var benzinLabel: UILabel!
+    @IBOutlet private weak var lpgLabel: UILabel!
+    @IBOutlet private weak var starButton: UIButton!
+    @IBOutlet private weak var brandIcon: UIImageView!
     
-    @IBAction func starTapped(_ sender: Any) {
+    @IBAction private func starTapped(_ sender: Any) {
         delegate?.removeFav()
     }
     

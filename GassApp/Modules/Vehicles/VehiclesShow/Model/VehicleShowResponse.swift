@@ -8,9 +8,7 @@
 import Foundation
 
 final class VehicleShowResponse : BaseResponse{
-    //var userName : String?
-    //var password : String?
-    
+
     var data : [Vehicle?]
     var success : Bool?
     var statusCode : Int?

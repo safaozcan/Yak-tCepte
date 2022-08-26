@@ -17,7 +17,6 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
     var isUserLoggedIn: Bool?
     let locationManager = CLLocationManager()
     var homePageVM = HomePageVM()
-    //var indexStations: Int?
     var indx : Int = 0
     
     
@@ -29,7 +28,7 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
         homePageVM.isKatkılıDizel = isDizelKatkılı
     }
     
-    @IBOutlet weak var plusImageView: UIImageView!
+    @IBOutlet private weak var plusImageView: UIImageView!
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,11 +57,8 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
         
         homePageVM.updateMap = { [weak self] in
             DispatchQueue.main.async {
-                let itemCount = (self?.homePageVM.stations?.count ?? 1) - 1
-                for indexx in 0...itemCount{
-                    print(self?.homePageVM.stations![indexx].brand)
-                    
-                }
+               
+            
                 
                 self?.addStationsToMapView()
             }
@@ -70,7 +66,7 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
         }
         
     }
-    @IBAction func searchBarClicked(_ sender: Any) {
+    @IBAction private func searchBarClicked(_ sender: Any) {
         let autocompleteController = GMSAutocompleteViewController()
             autocompleteController.delegate = self
 
@@ -91,36 +87,19 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
             present(autocompleteController, animated: true, completion: nil)
     
     }
-        
-    
-   
-    //func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {}
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        //viewModel?.loadStations(lat: currentLocation?.latitude ?? 39.80, lng: currentLocation?.longitude ?? 32.64)
-    }
-    
-    //func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
-      //  mapView.addAnnotation(annotation)}
 
     
-    
-     func addStationsToMapView(){
+    private func addStationsToMapView(){
         
         let itemCount = (homePageVM.stations?.count ?? 1) - 1
          if itemCount >= 0{
         let count = 0...itemCount
              for index in count {
             
-                let pin = MyPointAnnotation()
+                let pin = MKPointAnnotation()
                 pin.coordinate = CLLocationCoordinate2D(latitude: (homePageVM.stations?[index].lat)!, longitude: (homePageVM.stations?[index].lng)!)
                 pin.title = homePageVM.stations?[index].brand
-                 pin.taggg = index
+                 
                  if ((homePageVM.isLPG) ) {
                     pin.subtitle = String((homePageVM.stations?[index].lpgPrice)!)
                 }
@@ -171,11 +150,11 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
         mapView.setRegion(region, animated: false)
     }
     
-    func loadStationSearch(coordinate: CLLocationCoordinate2D){
+    private func loadStationSearch(coordinate: CLLocationCoordinate2D){
         homePageVM.loadStations(lat: coordinate.latitude, lng: coordinate.longitude)
         mapView.setRegion(MKCoordinateRegion(center: coordinate, latitudinalMeters: 3000, longitudinalMeters: 3000), animated: true)
     }
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet private weak var mapView: MKMapView!
     var mapCamera = MKMapCamera()
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -210,37 +189,12 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
         //print(view.tag)
         let customView = view as! MyCustomAnnotation
         vm.stations = homePageVM.stations
-       
-        
-       
         vm.station = homePageVM.stations?[customView.indexx ?? 0 ]
-        
-        
-        
-        
-        
-        //vc.modalPresentationStyle = .fullScreen
-        //viewModel?.indexForBottomSheet = Int(view.accessibilityLabel!)!
-        
-        
-        /*let smallId = UISheetPresentationController.Detent.Identifier("small")
-        
-        let smallDetent = UISheetPresentationController.Detent.custom(identifier: smallId) { context in
-            return 250
-        }
-        sheetPresentationController?.detents = [smallDetent, .medium(), .large()]*/
-        
-        
+
         vc.sheetPresentationController?.detents = [.medium()]
         self.present(vc, animated: true)
     }
-    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-        //print(mapCamera.centerCoordinateDistance)
-        //print(mapCamera.centerCoordinate)
-        //print(mapView.centerCoordinate)
-        //request.region = MKCoordinateRegion.init(center: mapView.centerCoordinate, latitudinalMeters: 100000, longitudinalMeters: 100000)
-        //searchBarSearchButtonClicked(searchBar)
-    }
+    //func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {}
 
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -317,16 +271,13 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
                                 customView.BrandIcon.image = UIImage(named: "DefaultGasStation")
                             }
                             customView.priceLabel.text = (annotationView.annotation?.subtitle)!
-                            //print(String(annotationView.annotation.))
+                            
                             customView.frame = annotationView.frame
                             
                             //customView.indexx = self.indx
                             print(customView.index)
                             //self.indx = self.indx + 1
-                            //let itemCount = (mapView.annotations.count)-1
-                            //for index in 0...itemCount{
-                              //  print(mapView.annotations[index].description)
-                            //}
+
                             print(annotationView)
                             return customView
                         }
@@ -348,13 +299,8 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
                        
                     }
 
-/*
-            if mapView.annotations.count > 0 {
-                mapView.removeAnnotations(mapView.annotations)
-*/
 
-
-    @IBAction func toMoreOptions(_ sender: Any) {
+    @IBAction private func toMoreOptions(_ sender: Any) {
         
         if isUserLoggedIn!{
             if plusImageView.image != UIImage(named:"PlusTapped") {
@@ -387,10 +333,10 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
         }
     }
     
-    @IBOutlet weak var HomePageMultipleButton: UIImageView!
-    @IBOutlet weak var multipleButtonViewContainer: UIView!
+    @IBOutlet private weak var HomePageMultipleButton: UIImageView!
+    @IBOutlet private weak var multipleButtonViewContainer: UIView!
     
-    @IBAction func favStationsButtonTapped(_ sender: Any) {
+    @IBAction private func favStationsButtonTapped(_ sender: Any) {
         
         let vm = FavoriteStationsVM()
         let vc = FavoriteStationsVC.instantiate(viewModel: vm)
@@ -399,7 +345,7 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
         
     
     }
-    @IBAction func addressButtonTapped(_ sender: Any) {
+    @IBAction private func addressButtonTapped(_ sender: Any) {
         
         let vm = AddressVM()
         let vc = AddressVC.instantiate(viewModel: vm)
@@ -408,7 +354,7 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
         self.present(vc, animated: true)
     }
     
-    @IBAction func vehicleButtonTapped(_ sender: Any) {
+    @IBAction private func vehicleButtonTapped(_ sender: Any) {
         
         let vm = VehicleShowVM()
         let vc = VehicleShowVC.instantiate(viewModel: vm)
@@ -416,7 +362,7 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
         self.present(vc, animated: true)
     }
 
-    @IBAction func toProfile(_ sender: Any) {
+    @IBAction private func toProfile(_ sender: Any) {
         if isUserLoggedIn ?? false  {
             let vm = ProfileVM()
             let vc = ProfileVC.instantiate(viewModel: vm)
@@ -432,7 +378,7 @@ class ViewController: BaseViewController<HomePageVM> , MKMapViewDelegate, CLLoca
     }
     
 
-    @IBAction func toFilter(_ sender: Any) {
+    @IBAction private func toFilter(_ sender: Any) {
         let vm = HomePageVM()
         let vc = FilterVC.instantiate(viewModel: vm)
         vm.mapLocation = currentLocation

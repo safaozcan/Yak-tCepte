@@ -7,24 +7,13 @@
 
 import Foundation
 import UIKit
-/*protocol ViewControllerProtocol: AnyObject {
-    // swiftlint:disable:next type_name
-    associatedtype T
-    init(viewModel: T)
-}*/
+
 class BaseViewController<U>: UIViewController {
         typealias T = U
         var viewModel: T?
     
-    
-    
    
-    
-    //var parameter:BaseParameter?
-    
-   
-    func
-    setTextField(textField: UITextField, placeHolder: String) {
+    func setTextField(textField: UITextField, placeHolder: String) {
         textField.layer.cornerRadius = 18.0
         
         textField.layer.borderWidth = 0.0

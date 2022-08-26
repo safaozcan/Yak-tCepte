@@ -17,16 +17,16 @@ class VehicleCollectionViewCellVC: UICollectionViewCell{
     
     
     
-    @IBOutlet weak var rowNumber: UILabel!
-    @IBOutlet weak var gassTypeLabel: UILabel!
-    @IBOutlet weak var vehicleName: UILabel!
-    @IBOutlet weak var vehicleDeleteButton: UIButton!
-    @IBOutlet weak var vehicleEditButton: UIButton!
+    @IBOutlet  weak var rowNumber: UILabel!
+    @IBOutlet  weak var gassTypeLabel: UILabel!
+    @IBOutlet  weak var vehicleName: UILabel!
+    @IBOutlet private weak var vehicleDeleteButton: UIButton!
+    @IBOutlet private weak var vehicleEditButton: UIButton!
     
-    @IBAction func vehicleeditTapped(_ sender: Any) {
+    @IBAction private func vehicleeditTapped(_ sender: Any) {
         delegate?.toVehicleEdit(id: "", row: rowNumber.text)
     }
-    @IBAction func vehicleDeleteTapped(_ sender: Any) {
+    @IBAction private func vehicleDeleteTapped(_ sender: Any) {
         delegate?.deleteVehicle(id: "", row: rowNumber.text)
         
     }

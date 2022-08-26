@@ -12,7 +12,7 @@ class SignUpViewModel : ViewModel{
     var signUpPageDataLoaded: (() -> Void)?
     var signUpAlert: (() -> Void)?
     
-    func registerResponse(result :Result<RegisterResponse,APIError>){
+    private func registerResponse(result :Result<RegisterResponse,APIError>){
         
         switch result {
         case .failure(let error):

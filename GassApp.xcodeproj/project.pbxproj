@@ -22,8 +22,6 @@
 		59226653289C12F4008538E6 /* AddressAddResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59226652289C12F4008538E6 /* AddressAddResponse.swift */; };
 		59226655289C1312008538E6 /* AddressAddRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59226654289C1312008538E6 /* AddressAddRequest.swift */; };
 		59226657289C145F008538E6 /* AddressAddView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59226656289C145F008538E6 /* AddressAddView.storyboard */; };
-		59226A3028B2B0450026C06A /* MyPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59226A2F28B2B0450026C06A /* MyPointAnnotation.swift */; };
-		59226A3228B2B2F90026C06A /* MyMKAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59226A3128B2B2F90026C06A /* MyMKAnnotation.swift */; };
 		5926AF9A2887F82C001007A8 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926AF992887F82C001007A8 /* APIRequest.swift */; };
 		5926AF9D288813EE001007A8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926AF9C288813EE001007A8 /* BaseViewController.swift */; };
 		5926AF9F28881AEF001007A8 /* VehicleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5926AF9E28881AEF001007A8 /* VehicleCollectionViewCell.xib */; };
@@ -33,7 +31,6 @@
 		592AA3D828755DB500F63DC5 /* ProfileView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592AA3D628755DB500F63DC5 /* ProfileView.storyboard */; };
 		592AA3DF28755DC200F63DC5 /* AddressShowView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592AA3DD28755DC200F63DC5 /* AddressShowView.storyboard */; };
 		592AA40028755DD300F63DC5 /* SignUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592AA3EC28755DD300F63DC5 /* SignUpView.storyboard */; };
-		592AA40228755DD300F63DC5 /* PasswordResetView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592AA3F828755DD300F63DC5 /* PasswordResetView.storyboard */; };
 		592AA40328755DD300F63DC5 /* LogInView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592AA3FE28755DD300F63DC5 /* LogInView.storyboard */; };
 		592B06502891165A003620EA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B064F2891165A003620EA /* ViewModel.swift */; };
 		5931A8F428AA746000143F5F /* NearStationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5931A8F328AA746000143F5F /* NearStationsResponse.swift */; };
@@ -49,7 +46,6 @@
 		59540FD5288EAAE30054BF98 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59540FD4288EAAE30054BF98 /* BaseResponse.swift */; };
 		59540FD9288EB0BF0054BF98 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59540FD8288EB0BF0054BF98 /* User.swift */; };
 		59540FDB288EB9C90054BF98 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59540FDA288EB9C90054BF98 /* SignUpViewModel.swift */; };
-		59540FDF288EBBC80054BF98 /* PasswordResetVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59540FDE288EBBC80054BF98 /* PasswordResetVM.swift */; };
 		59540FE1288EBC2E0054BF98 /* FavoriteStationsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59540FE0288EBC2E0054BF98 /* FavoriteStationsVM.swift */; };
 		59540FE3288EBC750054BF98 /* AddressVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59540FE2288EBC750054BF98 /* AddressVM.swift */; };
 		59540FE5288EBD240054BF98 /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59540FE4288EBD240054BF98 /* ProfileVM.swift */; };
@@ -65,7 +61,6 @@
 		599EF059288EA9BE007244B8 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599EF058288EA9BE007244B8 /* LogInViewModel.swift */; };
 		59B06F6F2885717E000DACB9 /* HomePageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B06F6E2885717E000DACB9 /* HomePageVM.swift */; };
 		59B06F71288581E9000DACB9 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B06F70288581E9000DACB9 /* SignUpVC.swift */; };
-		59B06F73288586CD000DACB9 /* PasswordResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B06F72288586CD000DACB9 /* PasswordResetVC.swift */; };
 		59B06F7728858C05000DACB9 /* FavoriteStationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B06F7628858C05000DACB9 /* FavoriteStationsVC.swift */; };
 		59B06F7928858C4E000DACB9 /* FavoriteStationsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59B06F7828858C4E000DACB9 /* FavoriteStationsViewCell.xib */; };
 		59B06F7B28858D03000DACB9 /* FavoriteStationsViewCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B06F7A28858D03000DACB9 /* FavoriteStationsViewCellVC.swift */; };
@@ -86,8 +81,6 @@
 		59C596B72874BF7B0023D327 /* GassAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C596B62874BF7B0023D327 /* GassAppUITests.swift */; };
 		59C596B92874BF7B0023D327 /* GassAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C596B82874BF7B0023D327 /* GassAppUITestsLaunchTests.swift */; };
 		59F1F2C528ACCAD300ADB25C /* FilterView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F1F2C428ACCAD300ADB25C /* FilterView.storyboard */; };
-		59F1F2C728AD2B7A00ADB25C /* Initialization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F1F2C628AD2B7A00ADB25C /* Initialization.storyboard */; };
-		59F1F2C928AD2BA900ADB25C /* InitializationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F1F2C828AD2BA900ADB25C /* InitializationVC.swift */; };
 		59FBF7D928AFA865005D45C1 /* AddFavRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FBF7D828AFA865005D45C1 /* AddFavRequest.swift */; };
 		59FBF7DB28AFC75C005D45C1 /* AddFavResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FBF7DA28AFC75C005D45C1 /* AddFavResponse.swift */; };
 		59FD7728289AE2BA00A4E17D /* VehicleEditRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FD7727289AE2BA00A4E17D /* VehicleEditRequest.swift */; };
@@ -129,8 +122,6 @@
 		59226652289C12F4008538E6 /* AddressAddResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressAddResponse.swift; sourceTree = "<group>"; };
 		59226654289C1312008538E6 /* AddressAddRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressAddRequest.swift; sourceTree = "<group>"; };
 		59226656289C145F008538E6 /* AddressAddView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddressAddView.storyboard; sourceTree = "<group>"; };
-		59226A2F28B2B0450026C06A /* MyPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPointAnnotation.swift; sourceTree = "<group>"; };
-		59226A3128B2B2F90026C06A /* MyMKAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMKAnnotation.swift; sourceTree = "<group>"; };
 		5926AF992887F82C001007A8 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		5926AF9C288813EE001007A8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5926AF9E28881AEF001007A8 /* VehicleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -140,7 +131,6 @@
 		592AA3D628755DB500F63DC5 /* ProfileView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileView.storyboard; sourceTree = "<group>"; };
 		592AA3DD28755DC200F63DC5 /* AddressShowView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddressShowView.storyboard; sourceTree = "<group>"; };
 		592AA3EC28755DD300F63DC5 /* SignUpView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUpView.storyboard; sourceTree = "<group>"; };
-		592AA3F828755DD300F63DC5 /* PasswordResetView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PasswordResetView.storyboard; sourceTree = "<group>"; };
 		592AA3FE28755DD300F63DC5 /* LogInView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogInView.storyboard; sourceTree = "<group>"; };
 		592B064F2891165A003620EA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5931A8F328AA746000143F5F /* NearStationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearStationsResponse.swift; sourceTree = "<group>"; };
@@ -156,7 +146,6 @@
 		59540FD4288EAAE30054BF98 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		59540FD8288EB0BF0054BF98 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		59540FDA288EB9C90054BF98 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
-		59540FDE288EBBC80054BF98 /* PasswordResetVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetVM.swift; sourceTree = "<group>"; };
 		59540FE0288EBC2E0054BF98 /* FavoriteStationsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStationsVM.swift; sourceTree = "<group>"; };
 		59540FE2288EBC750054BF98 /* AddressVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressVM.swift; sourceTree = "<group>"; };
 		59540FE4288EBD240054BF98 /* ProfileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVM.swift; sourceTree = "<group>"; };
@@ -172,7 +161,6 @@
 		599EF058288EA9BE007244B8 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 		59B06F6E2885717E000DACB9 /* HomePageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVM.swift; sourceTree = "<group>"; };
 		59B06F70288581E9000DACB9 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		59B06F72288586CD000DACB9 /* PasswordResetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetVC.swift; sourceTree = "<group>"; };
 		59B06F7628858C05000DACB9 /* FavoriteStationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStationsVC.swift; sourceTree = "<group>"; };
 		59B06F7828858C4E000DACB9 /* FavoriteStationsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteStationsViewCell.xib; sourceTree = "<group>"; };
 		59B06F7A28858D03000DACB9 /* FavoriteStationsViewCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStationsViewCellVC.swift; sourceTree = "<group>"; };
@@ -197,8 +185,6 @@
 		59C596B62874BF7B0023D327 /* GassAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GassAppUITests.swift; sourceTree = "<group>"; };
 		59C596B82874BF7B0023D327 /* GassAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GassAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		59F1F2C428ACCAD300ADB25C /* FilterView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterView.storyboard; sourceTree = "<group>"; };
-		59F1F2C628AD2B7A00ADB25C /* Initialization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Initialization.storyboard; sourceTree = "<group>"; };
-		59F1F2C828AD2BA900ADB25C /* InitializationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializationVC.swift; sourceTree = "<group>"; };
 		59FBF7D828AFA865005D45C1 /* AddFavRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavRequest.swift; sourceTree = "<group>"; };
 		59FBF7DA28AFC75C005D45C1 /* AddFavResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavResponse.swift; sourceTree = "<group>"; };
 		59FD7727289AE2BA00A4E17D /* VehicleEditRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleEditRequest.swift; sourceTree = "<group>"; };
@@ -575,7 +561,6 @@
 			isa = PBXGroup;
 			children = (
 				592AA3E828755DD300F63DC5 /* SıgnUp */,
-				592AA3F428755DD300F63DC5 /* PasswordReset */,
 				592AA3FA28755DD300F63DC5 /* LogIn */,
 			);
 			path = LogIn;
@@ -621,48 +606,6 @@
 			isa = PBXGroup;
 			children = (
 				59B06F70288581E9000DACB9 /* SignUpVC.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		592AA3F428755DD300F63DC5 /* PasswordReset */ = {
-			isa = PBXGroup;
-			children = (
-				592AA3F528755DD300F63DC5 /* ViewModel */,
-				592AA3F628755DD300F63DC5 /* Model */,
-				592AA3F728755DD300F63DC5 /* View */,
-				592AA3F928755DD300F63DC5 /* ViewController */,
-			);
-			path = PasswordReset;
-			sourceTree = "<group>";
-		};
-		592AA3F528755DD300F63DC5 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				59540FDE288EBBC80054BF98 /* PasswordResetVM.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		592AA3F628755DD300F63DC5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		592AA3F728755DD300F63DC5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				592AA3F828755DD300F63DC5 /* PasswordResetView.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		592AA3F928755DD300F63DC5 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				59B06F72288586CD000DACB9 /* PasswordResetVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -730,7 +673,6 @@
 				59514CCC2892ACDE00BA0AE7 /* BottomSheet.storyboard */,
 				597FC45328ABF8E1000C6FE7 /* MyCustomAnnotation.xib */,
 				59F1F2C428ACCAD300ADB25C /* FilterView.storyboard */,
-				59F1F2C628AD2B7A00ADB25C /* Initialization.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -751,9 +693,6 @@
 				59BE00F82889708900718438 /* FilterVC.swift */,
 				59514CCE2892AD1A00BA0AE7 /* BottomSheetVC.swift */,
 				597FC45528ABFA4A000C6FE7 /* MyCustomAnnotation.swift */,
-				59F1F2C828AD2BA900ADB25C /* InitializationVC.swift */,
-				59226A2F28B2B0450026C06A /* MyPointAnnotation.swift */,
-				59226A3128B2B2F90026C06A /* MyMKAnnotation.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1005,13 +944,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				592AA40228755DD300F63DC5 /* PasswordResetView.storyboard in Resources */,
 				59C596A22874BF7A0023D327 /* LaunchScreen.storyboard in Resources */,
 				592AA40328755DD300F63DC5 /* LogInView.storyboard in Resources */,
 				59485333288E6FB30004C965 /* VehicleAddView.storyboard in Resources */,
 				592AA3DF28755DC200F63DC5 /* AddressShowView.storyboard in Resources */,
 				59514CCD2892ACDE00BA0AE7 /* BottomSheet.storyboard in Resources */,
-				59F1F2C728AD2B7A00ADB25C /* Initialization.storyboard in Resources */,
 				59B508D6289AB93B0026CF3A /* VehicleEditView.storyboard in Resources */,
 				592AA3CD28755DAA00F63DC5 /* VehicleShowView.storyboard in Resources */,
 				59892D66288AC7F90013BA75 /* FavoriteStationsView.storyboard in Resources */,
@@ -1114,8 +1051,6 @@
 				5903B0E42877421D008EF575 /* LogInVC.swift in Sources */,
 				59514CCB2892A3D100BA0AE7 /* RegisterResponse.swift in Sources */,
 				59226655289C1312008538E6 /* AddressAddRequest.swift in Sources */,
-				59540FDF288EBBC80054BF98 /* PasswordResetVM.swift in Sources */,
-				59226A3228B2B2F90026C06A /* MyMKAnnotation.swift in Sources */,
 				59514CD22892CA5500BA0AE7 /* VehicleShowRequest.swift in Sources */,
 				599EF053288E8CA8007244B8 /* BaseRequest.swift in Sources */,
 				59FD7728289AE2BA00A4E17D /* VehicleEditRequest.swift in Sources */,
@@ -1137,7 +1072,6 @@
 				59FD772A289AE65400A4E17D /* VehicleEditResponse.swift in Sources */,
 				59B06F6F2885717E000DACB9 /* HomePageVM.swift in Sources */,
 				59540FE3288EBC750054BF98 /* AddressVM.swift in Sources */,
-				59B06F73288586CD000DACB9 /* PasswordResetVC.swift in Sources */,
 				59BE00F92889708A00718438 /* FilterVC.swift in Sources */,
 				59C596962874BF790023D327 /* AppDelegate.swift in Sources */,
 				59540FE7288EBD670054BF98 /* VehicleAddVM.swift in Sources */,
@@ -1145,11 +1079,9 @@
 				590FEA1628982079008F25A9 /* VehicleDeleteResponse.swift in Sources */,
 				59514CC92892A39500BA0AE7 /* RegisterRequest.swift in Sources */,
 				59FBF7DB28AFC75C005D45C1 /* AddFavResponse.swift in Sources */,
-				59226A3028B2B0450026C06A /* MyPointAnnotation.swift in Sources */,
 				590FEA1228980DF6008F25A9 /* VehicleAddResponse.swift in Sources */,
 				5926AF9A2887F82C001007A8 /* APIRequest.swift in Sources */,
 				592B06502891165A003620EA /* ViewModel.swift in Sources */,
-				59F1F2C928AD2BA900ADB25C /* InitializationVC.swift in Sources */,
 				59226651289C1291008538E6 /* AddressAddVC.swift in Sources */,
 				59B06F71288581E9000DACB9 /* SignUpVC.swift in Sources */,
 				59C596982874BF790023D327 /* SceneDelegate.swift in Sources */,

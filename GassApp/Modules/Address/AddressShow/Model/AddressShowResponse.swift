@@ -7,10 +7,7 @@
 
 import Foundation
 final class AddressShowResponse: BaseResponse{
-    //var userName : String?
-    //var password : String?
-    
-    
+ 
     var data : [Address?]
     var success : Bool?
     var statusCode : Int?

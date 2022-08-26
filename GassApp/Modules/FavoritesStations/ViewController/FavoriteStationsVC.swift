@@ -10,8 +10,8 @@ import UIKit
 class FavoriteStationsVC: BaseViewController<FavoriteStationsVM> ,UICollectionViewDelegate,UICollectionViewDataSource{
 
     var token : String?
-    @IBOutlet weak var favoriteStationsCollectionView: UICollectionView!
-    @IBOutlet var backIconTapGesture: UITapGestureRecognizer!
+    @IBOutlet private weak var favoriteStationsCollectionView: UICollectionView!
+    @IBOutlet private var backIconTapGesture: UITapGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +23,10 @@ class FavoriteStationsVC: BaseViewController<FavoriteStationsVM> ,UICollectionVi
         
     }
     
-    @IBAction func plusTapped(_ sender: Any) {
+    @IBAction private func plusTapped(_ sender: Any) {
         
     }
-    @IBAction func backIconTapped(_ sender: Any) {
+    @IBAction private func backIconTapped(_ sender: Any) {
         let vm = HomePageVM()
         let vc = ViewController.instantiate(viewModel: vm)
         vc.modalPresentationStyle = .fullScreen

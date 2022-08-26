@@ -12,7 +12,7 @@ final class LogInViewModel: ViewModel {
 
     var loginAlert: (() -> Void)?
    
-    func loginResponse(result :Result<LoginResponse,APIError>){
+    private func loginResponse(result :Result<LoginResponse,APIError>){
         
         
         if let response = serverResponse(result: result){

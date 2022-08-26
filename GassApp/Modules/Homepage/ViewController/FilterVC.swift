@@ -43,24 +43,24 @@ class FilterVC: BaseViewController<HomePageVM>{
     }
     
     
-    @IBOutlet weak var benzinButton: UIButton!
-    @IBOutlet weak var benzinKatkılıButton: UIButton!
-    @IBOutlet weak var dizelButton: UIButton!
-    @IBOutlet weak var dizelKatkılıButton: UIButton!
-    @IBOutlet weak var lpgButton: UIButton!
-    @IBOutlet weak var aygazButton: UIButton!
-    @IBOutlet weak var aytemizButton: UIButton!
-    @IBOutlet weak var bpButton: UIButton!
-    @IBOutlet weak var goButton: UIButton!
-    @IBOutlet weak var kadoilButton: UIButton!
-    @IBOutlet weak var mogazButton: UIButton!
-    @IBOutlet weak var petrolOfisiButton: UIButton!
-    @IBOutlet weak var opetButton: UIButton!
-    @IBOutlet weak var shellButton: UIButton!
-    @IBOutlet weak var totalButton: UIButton!
-    @IBOutlet weak var UygulaButton: UIButton!
+    @IBOutlet private weak var benzinButton: UIButton!
+    @IBOutlet private weak var benzinKatkılıButton: UIButton!
+    @IBOutlet private weak var dizelButton: UIButton!
+    @IBOutlet private weak var dizelKatkılıButton: UIButton!
+    @IBOutlet private weak var lpgButton: UIButton!
+    @IBOutlet private weak var aygazButton: UIButton!
+    @IBOutlet private weak var aytemizButton: UIButton!
+    @IBOutlet private weak var bpButton: UIButton!
+    @IBOutlet private weak var goButton: UIButton!
+    @IBOutlet private weak var kadoilButton: UIButton!
+    @IBOutlet private weak var mogazButton: UIButton!
+    @IBOutlet private weak var petrolOfisiButton: UIButton!
+    @IBOutlet private weak var opetButton: UIButton!
+    @IBOutlet private weak var shellButton: UIButton!
+    @IBOutlet private weak var totalButton: UIButton!
+    @IBOutlet private weak var UygulaButton: UIButton!
     
-    @IBAction func benzinButtonTapped(_ sender: Any) {
+    @IBAction private func benzinButtonTapped(_ sender: Any) {
         benzinButton.backgroundColor = UIColor(red: 0.53, green: 0.73, blue: 0.78, alpha: 1.00)
         benzinButton.tintColor = .white
         
@@ -82,7 +82,7 @@ class FilterVC: BaseViewController<HomePageVM>{
         viewModel?.isLPG = false
     }
     
-    @IBAction func benzinKatkılıButtonTapped(_ sender: Any) {
+    @IBAction private func benzinKatkılıButtonTapped(_ sender: Any) {
         benzinButton.backgroundColor = .white
         benzinButton.tintColor = UIColor(red: 0.53, green: 0.73, blue: 0.78, alpha: 1.00)
         
@@ -104,7 +104,7 @@ class FilterVC: BaseViewController<HomePageVM>{
         viewModel?.isLPG = false
     }
     
-    @IBAction func dizelButtonTapped(_ sender: Any) {
+    @IBAction private func dizelButtonTapped(_ sender: Any) {
         dizelButton.backgroundColor = UIColor(red: 0.53, green: 0.73, blue: 0.78, alpha: 1.00)
         dizelButton.tintColor = .white
 
@@ -127,7 +127,7 @@ class FilterVC: BaseViewController<HomePageVM>{
         viewModel?.isLPG = false
     }
     
-    @IBAction func dizelKatkılıButtonTapped(_ sender: Any) {
+    @IBAction private func dizelKatkılıButtonTapped(_ sender: Any) {
         dizelButton.backgroundColor = .white
         dizelButton.tintColor = UIColor(red: 0.53, green: 0.73, blue: 0.78, alpha: 1.00)
 
@@ -151,7 +151,7 @@ class FilterVC: BaseViewController<HomePageVM>{
     }
         
     
-    @IBAction func lpgButtonTapped(_ sender: Any) {
+    @IBAction private func lpgButtonTapped(_ sender: Any) {
         dizelButton.backgroundColor = .white
         dizelButton.tintColor = UIColor(red: 0.53, green: 0.73, blue: 0.78, alpha: 1.00)
 
@@ -175,23 +175,11 @@ class FilterVC: BaseViewController<HomePageVM>{
         
     }
     
-    @IBAction func uygulaButtonTapped(_ sender: Any) {
-        //toScreen(screenId: "Main", storyboardName: "Main")
+    @IBAction private func uygulaButtonTapped(_ sender: Any) {
         
         let vm = HomePageVM()
-        
         let vc = ViewController.instantiate(viewModel: vm) as! ViewController
-      /*  vm.vmm = viewModel
-        vm.mapLocation = viewModel?.mapLocation
-        vm.isfilter = viewModel?.isfilter ?? false
-        vm.isDizel = viewModel?.isDizel ?? false
-        vm.isLPG = viewModel?.isLPG ?? false
-        print(viewModel?.isLPG)
-        print(vm.isLPG)
-        vm.isBenzin = viewModel?.isBenzin ?? false
-        vm.isKatkılıDizel = viewModel?.isKatkılıDizel ?? false
-        vm.isKatkılıBenzin = viewModel?.isKatkılıBenzin ?? false
-       */
+    
         vc.setFilter(isDizel: viewModel!.isDizel, isLPG: viewModel!.isLPG, isBenzin: viewModel!.isBenzin, isDizelKatkılı: viewModel!.isKatkılıDizel, isbenzinKatkılı: viewModel!.isKatkılıBenzin )
        
         vc.modalPresentationStyle = .fullScreen
@@ -202,7 +190,7 @@ class FilterVC: BaseViewController<HomePageVM>{
 }
 extension FilterVC{
     
-    func setButton(button: UIButton){
+    private func setButton(button: UIButton){
         button.layer.cornerRadius = 12.0
         button.layer.borderWidth = 2.0
         button.layer.borderColor = CGColor(red: 0.53, green: 0.73, blue: 0.78, alpha: 1.00)

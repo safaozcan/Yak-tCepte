@@ -12,7 +12,7 @@ class AddressVM:ViewModel{
     
     var updateUIAfterDeleteAddress: (() -> Void)?
     
-    func AddressShowResponse(result : Result<AddressShowResponse,APIError>){
+    private func AddressShowResponse(result : Result<AddressShowResponse,APIError>){
         
         switch result {
             
@@ -62,7 +62,7 @@ class AddressVM:ViewModel{
             break;
         }
     }
-    func AddressDeleteResponse(result : Result<AddressDeleteResponse,APIError>){
+    private func AddressDeleteResponse(result : Result<AddressDeleteResponse,APIError>){
         
         switch result {
             

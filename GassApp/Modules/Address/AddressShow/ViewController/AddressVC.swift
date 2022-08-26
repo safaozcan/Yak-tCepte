@@ -14,7 +14,7 @@ class AddressVC: BaseViewController<AddressVM> {
     
     var token: String?
     
-    @IBOutlet weak var addressCollectionView: UICollectionView!
+    @IBOutlet private weak var addressCollectionView: UICollectionView!
     
 
     
@@ -45,7 +45,7 @@ class AddressVC: BaseViewController<AddressVM> {
         
     }
     
-    @IBAction func plusIconTapped(_ sender: Any) {
+    @IBAction private func plusIconTapped(_ sender: Any) {
         
         
         let vm = AddressAddVM()
@@ -56,12 +56,12 @@ class AddressVC: BaseViewController<AddressVM> {
     }
    
     
-    @IBAction func goBack(_ sender: Any) {
+    @IBAction private func goBack(_ sender: Any) {
         let vm = HomePageVM()
         let vc = ViewController.instantiate(viewModel: vm)
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
-        //toScreen(screenId: "Main", storyboardName: "Main")
+       
     }
     
    

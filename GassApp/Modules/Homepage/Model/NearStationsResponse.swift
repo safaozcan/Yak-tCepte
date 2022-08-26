@@ -7,9 +7,7 @@
 
 import Foundation
 final class NearStationsResponse : BaseResponse{
-    //var userName : String?
-    //var password : String?
-    
+  
     var data : [Station]
     var success : Bool?
     var statusCode : Int?

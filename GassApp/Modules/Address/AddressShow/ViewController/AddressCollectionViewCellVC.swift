@@ -15,16 +15,16 @@ protocol AddressCollectionViewCellDelegate: AnyObject {
 class AddressCollectionViewCellVC: UICollectionViewCell{
     weak var delegate: AddressCollectionViewCellDelegate?
     
-    @IBOutlet weak var addressDeleteButton: UIButton!
+    @IBOutlet private weak var addressDeleteButton: UIButton!
     @IBOutlet weak var addressTagLabel: UILabel!
     @IBOutlet weak var AddressLabel: UILabel!
-    @IBOutlet weak var addressEditButton: UIButton!
+    @IBOutlet private weak var addressEditButton: UIButton!
     
-    @IBAction func addressEditButtonTapped(_ sender: Any) {
+    @IBAction private func addressEditButtonTapped(_ sender: Any) {
         delegate?.toAddressEdit()
     }
     
-    @IBAction func addressDeleteButtonTapped(_ sender: Any) {
+    @IBAction private func addressDeleteButtonTapped(_ sender: Any) {
         delegate?.deleteAddress(id: "")
     }
     

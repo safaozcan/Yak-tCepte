@@ -9,17 +9,13 @@ import Foundation
 import UIKit
 final class LogInVC: BaseViewController<LogInViewModel>{
     
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setTextField(textField: passwordTextField,placeHolder: "Şifre")
         setTextField(textField: emailTextField,placeHolder: "Email")
         
         hideKeyboardWhenTappedAround()
+        
         viewModel?.logInPageDataLoaded = { [weak self] in
             DispatchQueue.main.async {
                 let vm = HomePageVM()
@@ -28,28 +24,25 @@ final class LogInVC: BaseViewController<LogInViewModel>{
                 self!.present(vc, animated: true)
             }
         }
+        
         viewModel?.loginAlert = { [weak self] in
             self?.alert(message: "Böyle bir kullanıcı bulunamadı. Lütfen tekrar deneyiniz.")
-            
         }
+        
         logInButon.layer.cornerRadius = 18.0
         logInButon.clipsToBounds = true
 
         
         
     }
-    @IBAction func email(_ sender: Any) {
 
-        
-    }
-
-    @IBOutlet weak var logInButon: UIButton!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var smallTitle: UILabel!
-    @IBOutlet weak var pageTitle: UILabel!
+    @IBOutlet private weak var logInButon: UIButton!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var smallTitle: UILabel!
+    @IBOutlet private weak var pageTitle: UILabel!
     
-    @IBAction func goBack(_ sender: Any) {
+    @IBAction private func goBack(_ sender: Any) {
         let vm = HomePageVM()
         let vc = ViewController.instantiate(viewModel: vm)
         vc.modalPresentationStyle = .fullScreen
@@ -57,10 +50,8 @@ final class LogInVC: BaseViewController<LogInViewModel>{
         
     }
   
-    @IBAction func toResetPassword(_ sender: Any) {
-        
-    }
-    @IBAction func signUpTapped(_ sender: Any) {
+
+    @IBAction private func signUpTapped(_ sender: Any) {
         
         let vm = SignUpViewModel()
         let vc = SignUpVC.instantiate(viewModel: vm)
@@ -70,7 +61,7 @@ final class LogInVC: BaseViewController<LogInViewModel>{
     }
 
    
-    @IBAction func logIn(_ sender: Any) {
+    @IBAction private func logIn(_ sender: Any) {
         viewModel?.logInUser(email: emailTextField.text!, password: passwordTextField.text!)
 
     }
