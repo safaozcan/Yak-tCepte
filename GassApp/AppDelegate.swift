@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //window = UIWindow(frame: UIScreen.main.bounds)
         //window?.makeKeyAndVisible()
         //window?.rootViewController = UINavigationController(rootViewController: MyInitialViewController())
-        GMSPlacesClient.provideAPIKey("AIzaSyB4-bIT9Oiz8HTPPzWP8MWny2RRz1E0on4")
+        GMSPlacesClient.provideAPIKey("****")
                 
         return true
     }
